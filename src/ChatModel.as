@@ -26,7 +26,9 @@ package
 		
 		public function ChatModel(t : T)
 		{
-			trace("ChatModel contructor 1");
+			trace("ChatModel contructor before super()");
+			super();
+			trace("ChatModel contructor after super()");
 		}
 		
 		private static var getTraceCount : int = 0;
