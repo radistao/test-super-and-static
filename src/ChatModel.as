@@ -3,6 +3,8 @@ package
 	public class ChatModel
 	{
 		
+		private static var getTraceCount : int = 0;
+		
 		public var someConst : String = getTrace("someConst");
 		public var someVar : String = getTrace("someVar");
 		
@@ -30,8 +32,6 @@ package
 			super();
 			trace("ChatModel contructor after super()");
 		}
-		
-		private static var getTraceCount : int = 0;
 		
 		public static function getTrace(str : String) : String {
 			getTraceCount++;
